@@ -1,0 +1,8 @@
+*.swp
+*.log
+target
+lib_managed
+src/main/classes*
+project/boot
+project/build/target
+data/
