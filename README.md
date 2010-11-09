@@ -14,16 +14,16 @@ _Note: This project was a demonstration, and is not actively developed ... unles
 
 The core of the code is in `src/main/scala/db` and consists of three files:
 
-* _Database.scala_ provides an object with hardcoded connection values for a MongoDB.
-* _Factory.scala_ provides a trait that provides the fundamental mapping functions to a mapping object.
-* _Persistable.scala_ provides a trait that provides metadata storage to instances of mapped records.
+* _Database.scala_ contains an object with hardcoded connection values for a MongoDB.
+* _Factory.scala_ contains a trait that provides the fundamental mapping functions to a mapping object.
+* _Persistable.scala_ contains a trait that provides metadata storage to instances of mapped records.
 
 ## Batteries Included
 
 There are example classes and objects, found in `src/main/scala/models`
 
-* _Material.scala_ provides a `Material` class (containing record data) and a `Material` object (containing the mapping logic) for a simple material with a name, part number, and a list of associated `Component` records.
-* _Component.scala_ provides a similar arrangement for the `Component` class and object.
+* _Material.scala_ contains a `Material` class (containing record data) and a `Material` object (containing the mapping logic) for a simple material with a name, part number, and a list of associated `Component` records.
+* _Component.scala_ contains a similar arrangement for the `Component` class and object.
 
 The two are related in the sense that a `Material` has many `Component`s.
 
